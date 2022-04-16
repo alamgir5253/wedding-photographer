@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "anything",
+    "price": 10,
+    "description": "anything",
+    "image": "https://i.ibb.co/Cz8tZXL/service1.png"
+  },
+  {
+    "id": 2,
+    "name": "anything",
+    "price": 10,
+    "description": "anything",
+    "image": "https://i.ibb.co/n7LMxW5/service2.png"
+  },
+  {
+    "id": 3,
+    "name": "anything",
+    "price": 10,
+    "description": "anything",
+    "image": "https://i.ibb.co/hfhxrSc/service3.png"
+  }
+]
