@@ -1,22 +1,23 @@
-.service-title{
+.packages-title{
     text-align: center;
     text-transform: uppercase;
     margin: 50px 0 30px 0;
 }
-.services-container{
+.package-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
-    
+    padding: 30px 0 50px 0;
+    text-align: center;
 }
-@media only screen and (max-width:576px){
-    .services-container{
+@media only screen and (max-width: 576px) {
+    .package-container{
         grid-template-columns: repeat(1, 1fr);
     }
     
 }
 @media only screen and (min-width:577px) and (max-width:992px){
-    .services-container{
+    .package-container{
         grid-template-columns: repeat(2, 1fr);
     }
     

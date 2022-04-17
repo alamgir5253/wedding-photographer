@@ -11,7 +11,7 @@ useEffect(()=>{
 },[])
     return (
         <div>
-            <h1>my Services</h1>
+            <h1 className='service-title'>my Services</h1>
         <div className='services-container'>
         {services.map(service => <Service
              key={service.id}
