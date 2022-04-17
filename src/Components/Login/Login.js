@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
 const Login = () => {
+    let navigate = useNavigate();
+  let location = useLocation();
+  
+
+//   let from = location.state?.from?.pathname || "/";
+  
     const [userInfo, setUserInfo] = useState({
         email:'',
         password: ''
@@ -20,6 +28,22 @@ const Login = () => {
         loading,
         hookError,
       ] = useSignInWithEmailAndPassword(auth);
+    //   if(user){
+    //       navigate(from, { replace: true });
+    //     }
+        
+        useEffect(()=>{
+            if(hookError){
+                toast(hookError.message)
+            }
+        },[hookError])
+        
+        let from = location.state?.from?.pathname || "/";
+        useEffect(()=>{
+          if(user){
+              navigate(from)
+          }
+        },[user])
 
     const handleEmail = e =>{
         const emailRegex = /\S+@\S+\.\S+/
@@ -58,11 +82,13 @@ const Login = () => {
                 {Errors && <p className='error-massage'>{Errors?.email}</p>}
                 <input type='password'name='password' placeholder='enter password' onChange={handlePassword}/>
                 {Errors && <p className='error-massage'>{Errors?.password}</p>}
-                <button className='form-btn' type='submit'>SignUp</button>
-                {hookError && <p className='error-massage'>{hookError?.message}</p>}
+                <button className='form-btn' type='submit'>login</button>
             </form>
             <p className='form-text'>already have an account ? <Link className='form-link' to='/signup'>please login</Link></p>
         <SocialLogin></SocialLogin>
+        <ToastContainer
+        position="top-center"
+        ></ToastContainer>
         
         </div>
     </div>
