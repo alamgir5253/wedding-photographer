@@ -8,7 +8,9 @@ import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer'
 import Login from './Components/Login/Login';
 import Signup from './Components/SignUP/Signup';
-// import NotFound from './Components/NotFound/NotFound';
+import CheckOut from './Components/CheckOut/CheckOut';
+import RequireAuth from './Components/Auth/RequireAuth';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -20,7 +22,12 @@ function App() {
      <Route path='/about' element={<About></About>}></Route>
      <Route path='/login' element={<Login></Login>}></Route>
      <Route path='/signup' element={<Signup></Signup>}></Route>
-     {/* <Route path='*' element={<NotFound></NotFound>}></Route> */}
+     <Route path='/checkout' element={
+       <RequireAuth>
+         <CheckOut></CheckOut>
+       </RequireAuth>
+     }></Route>
+     <Route path='*' element={<NotFound></NotFound>}></Route>
    </Routes>
    <Footer></Footer>
     </div>

@@ -10,6 +10,22 @@
     padding: 30px 0 50px 0;
     text-align: center;
 }
+.package{
+    width: 400px;
+    padding: 40px 20px 10px 20px;
+    border-radius: 19px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 15px #868686,
+        -15px -15px 70px #ffffff;
+    margin-top: 100px;
+    margin: 0 auto;
+}
+.package ul{
+    padding: 0;
+}
+.package ul li{
+    list-style: none;
+}
 @media only screen and (max-width: 576px) {
     .package-container{
         grid-template-columns: repeat(1, 1fr);

@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.App{
+  background: #e3f2fd;
+}
 
 @keyframes App-logo-spin {
   from {

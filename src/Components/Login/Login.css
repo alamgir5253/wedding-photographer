@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     height: auto;
+   
 }
 
 .form-container {
@@ -70,4 +71,8 @@
     text-decoration: none;
     font-weight: bold;
     color: blue;
+}
+.error-massage{
+    color: #e22c2c;
+    font-weight: bold;
 }

@@ -13,7 +13,7 @@ const Service = ({service}) => {
             <p>service amount{price}</p>
             <p>{description}</p>
             </div>
-            <Link className='link-button' to='/login'> check out</Link>
+            <Link className='link-button' to='/checkout'>checkout</Link>
         </div>
     );
 };
