@@ -4,7 +4,7 @@ import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import './SignUp.css'
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 const Signup = () => {
     const [userInfo, setUserInfo] = useState({
@@ -22,8 +22,7 @@ const Signup = () => {
         user,
         loading,
         hookError,
-      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});
-      
+      ] = useCreateUserWithEmailAndPassword(auth,{sendEmailVerification:true});      
       useEffect(()=>{
           if(hookError){
               toast(hookError.message)
