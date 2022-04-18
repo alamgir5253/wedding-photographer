@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "name": "anything",
-    "price": 10,
-    "description": "anything",
+    "name": "Bronze",
+    "price": 1100,
+    "description": " i will provide Free  4 to 6 days Consultation before your wedding ceremony. i will provide High resolution photo ",
     "image": "https://i.ibb.co/Cz8tZXL/service1.png"
   },
   {
     "id": 2,
-    "name": "anything",
-    "price": 10,
-    "description": "anything",
+    "name": "silver",
+    "price": 1500,
+    "description": " i will provide Free  2 to 3 week Consultation before your wedding ceremony. i will provide High resolution photo. i will provide Fully Edited Photo",
     "image": "https://i.ibb.co/n7LMxW5/service2.png"
   },
   {
     "id": 3,
-    "name": "anything",
-    "price": 10,
-    "description": "anything",
+    "name": "gold",
+    "price": 2000,
+    "description": "All edited files in high resolution on a beautiful wooden engraved USB key presented in a gorgeous maple box with 30 6x4 Prints",
     "image": "https://i.ibb.co/hfhxrSc/service3.png"
   }
 ]

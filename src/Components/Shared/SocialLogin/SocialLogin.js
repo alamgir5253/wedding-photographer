@@ -1,16 +1,26 @@
 import React, { useEffect } from 'react';
-import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useAuthState, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import './SocialLogin.css'
+import { useLocation, useNavigate } from 'react-router-dom';
 const SocialLogin = () => {
-    const [signInWithGoogle, googleUser, googleLoading, error] = useSignInWithGoogle(auth);
+    const [user] =useAuthState(auth)
+    const [signInWithGoogle, User, googleLoading, error] = useSignInWithGoogle(auth);
     useEffect(()=>{
         if(error){
-            toast(error.message)
+            toast(error?.message)
         }
     },[error])
+    let navigate = useNavigate();
+    let location = useLocation();
+let from = location.state?.from?.pathname || "/";
+useEffect(()=>{
+  if(user){
+      navigate(from)
+  }
+},[user])
     return (
         
         <div className='social-container'>

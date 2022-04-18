@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { useAuthState, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useAuthState, useSendPasswordResetEmail, useSignInWithEmailAndPassword, useUpdatePassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import SocialLogin from '../Shared/SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 import './Login.css'
+import { async } from '@firebase/util';
 const Login = () => {
     let navigate = useNavigate();
   let location = useLocation();
@@ -73,6 +74,15 @@ const Login = () => {
         e.preventDefault()
         signInWithEmailAndPassword(userInfo.email,userInfo.password)
     }
+    // handleForgetPassword
+    const [sendPasswordResetEmail, sending, error] = useSendPasswordResetEmail(
+        auth
+      );
+
+    const handleForgetPassword = async() =>{
+        await sendPasswordResetEmail(userInfo.email);
+        toast('reset your password')
+    }
     return (
         <div className='signup-page'>
         <div className='form-container'>  
@@ -85,6 +95,7 @@ const Login = () => {
                 <button className='form-btn' type='submit'>login</button>
             </form>
             <p className='form-text'>already have an account ? <Link className='form-link' to='/signup'>please login</Link></p>
+            <p onClick={handleForgetPassword}>forget password?</p>
         <SocialLogin></SocialLogin>
         <ToastContainer
         position="top-center"
