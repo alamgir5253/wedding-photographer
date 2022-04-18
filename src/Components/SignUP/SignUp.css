@@ -9,9 +9,9 @@
     width: 400px;
     padding: 40px 20px 10px 30px;
     border-radius: 19px;
-    background: #e0e0e0;
-    box-shadow: 35px 35px 70px #868686,
-        -35px -35px 70px #ffffff;
+    background: #ADE8F4;
+box-shadow:  5px 5px 10px #93c5cf,
+             -5px -5px 10px #c7ffff;
     margin-top: 100px;
 
 }
@@ -34,9 +34,9 @@
     outline: 0;
     margin: 15px 0;
     border-radius: 8px;
-    background: #e0e0e0;
-    box-shadow: -5px -5px 10px #5a5a5a,
-        5px 5px 10px #ffffff;
+    background: #ADE8F4;
+box-shadow:  5px 5px 10px #93c5cf,
+             -5px -5px 10px #c7ffff;
     font-size: 18px;
 
 }

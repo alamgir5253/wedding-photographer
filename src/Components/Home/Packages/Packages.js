@@ -7,39 +7,36 @@ const Packages = () => {
             <div className='package-container'>
                 <div className='package'>
                     <h5>regulur</h5>
-                    <h3>$35</h3>
-                    <p>monthly</p>
+                    <h3>$999</h3>
                     <ul>
-                        <li>hatha yoga</li>
-                        <li>total body workout</li>
-                        <li>spiritual guidence</li>
-                        <li>meditation</li>
-                        <li></li>
+                        <li>Free Consultation</li>
+                        <li>Fully Edited Photo</li>
+                        <li>High resolution files</li>
+                        <li>Copyright Free</li>
+
+                    
                     </ul>
                 </div>
                 <div className='package'>
-                    <h5>popular</h5>
-                    <h3>$55</h3>
-                    <p>monthly</p>
+                    <h5>Best</h5>
+                    <h3>$1999</h3>
                     <ul>
-                        <li>hatha yoga</li>
-                        <li>pilates for the core</li>
-                        <li>spiritual guidence</li>
-                        <li>meditation</li>
+                        <li>Fully Edited Photo</li>
+                        <li>Password protected Online Gallery</li>
+                        <li>Wedding Album 30 Page</li>
+                        <li>Copyright Free</li>
                         <li>unlimited access to contact</li>
                     </ul>
                 </div>
                 <div className='package'>
                     <h5>premium</h5>
-                    <h3>$99</h3>
-                    <p>monthly</p>
+                    <h3>$3000</h3>
                     <ul>
-                        <li>hatha yoga</li>
-                        <li>total body workout</li>
-                        <li>spiritual guidence</li>
-                        <li>meditation</li>
-                        <li>unlimited access to contact</li>
-                        <li>pilates for the core</li>
+                        <li>Free Consultation for 3 week</li>
+                        <li>Fully Edited Photo</li>
+                        <li>Album Size: 30x20cm</li>
+                        <li>High resolution files</li>
+                        <li>Copyright Free</li>
                     </ul>
                 </div>
                 

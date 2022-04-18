@@ -1,5 +1,5 @@
 .footer-page{
-    background: #000;
+    background: #023E8A;
     margin-top: 100px;
 
 }
@@ -20,6 +20,10 @@
 .footer-container .address ul li{
     list-style: none;
 
+}
+.footer-img{
+    width: 100px;
+    border-radius: 5px;
 }
 
 @media only screen and (max-width: 576px) {

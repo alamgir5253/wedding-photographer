@@ -1,5 +1,6 @@
 .about-container{
-    
+    display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -7,9 +8,10 @@
     width: 400px;
     padding: 40px 20px 10px 30px;
     border-radius: 19px;
-    background: #e0e0e0;
-    box-shadow: 35px 35px 70px #868686,
-        -35px -35px 70px #ffffff;
+    border-radius: 10px;
+background: #ADE8F4;
+box-shadow:  5px 5px 10px #93c5cf,
+             -5px -5px 10px #c7ffff;
     margin-top: 100px;
 }
 .about-me h3{
