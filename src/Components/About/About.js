@@ -1,10 +1,11 @@
 import React from 'react';
 import './About.css'
+import aboutme from '../../images/aboutme.JPG'
 const About = () => {
     return (
         <div className='about-container'>
             <div className='about-me'>
-                <img />
+                <img style={{width:'100%'}} src={aboutme} />
                 <h3><span>name:</span> alomgir hossain</h3>
                 <h5><span>profession: </span>employ</h5>
                 <h6><span>email:</span>alamgir5253@gmail.com</h6>
