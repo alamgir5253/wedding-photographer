@@ -12,7 +12,7 @@
     text-align: center;
 }
 .package{
-    width: 400px;
+    /* width: 400px; */
     padding: 40px 20px 10px 20px;
     border-radius: 19px;
     border-radius: 10px;
@@ -43,11 +43,28 @@ box-shadow:  5px 5px 10px #93c5cf,
     .package-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    .package{
+        width: 250px;
+    padding: 10px;
+    }
+    .package h5 {
+        font-size: 20px;
+    }
+    .package h3{
+        font-size: 25px;
+    }
+    .package ul li{
+        font-size: 16px;
+    }
     
 }
 @media only screen and (min-width:577px) and (max-width:992px){
     .package-container{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .package{
+        width: 250px;
+    padding: 10px;
     }
     
 }

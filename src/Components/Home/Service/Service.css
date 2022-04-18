@@ -1,5 +1,5 @@
 .service-container{
-    width: 400px;
+    /* width: 400px; */
     padding: 40px 20px 10px 30px;
     border-radius: 19px;
     border-radius: 10px;
@@ -12,9 +12,9 @@
     text-align: center;
 }
 .service-image{
-    width: 300px;
+    /* width: 300px; */
     margin: auto;
-    height: 300px;
+    /* height: 300px; */
     border-radius: 50%;
     overflow: hidden;
     
@@ -63,4 +63,18 @@
 .link-button:hover{
     background: #023E8A;
     color: #fff;
+}
+
+@media only screen and (max-width:576px){
+    .service-container{
+        /* width: 250px; */
+        padding: 10px;
+    }
+    /* .service-image{
+        width: 200px;
+        height: 200px;
+
+        
+    } */
+    
 }
