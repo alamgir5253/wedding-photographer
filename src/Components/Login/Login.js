@@ -94,7 +94,7 @@ const Login = () => {
                 {Errors && <p className='error-massage'>{Errors?.password}</p>}
                 <button className='form-btn' type='submit'>login</button>
             </form>
-            <p className='form-text'>already have an account ? <Link className='form-link' to='/signup'>please login</Link></p>
+            <p className='form-text'>don't have an account ? <Link className='form-link' to='/signup'>please sign up</Link></p>
             <p onClick={handleForgetPassword}>forget password?</p>
         <SocialLogin></SocialLogin>
         <ToastContainer

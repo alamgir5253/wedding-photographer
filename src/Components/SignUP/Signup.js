@@ -89,7 +89,7 @@ const Signup = () => {
                 <button className='form-btn' type='submit'>SignUp</button>
                 {/* {hookError && <p className='error-massage'>{hookError?.message}</p>} */}
             </form>
-            <p className='form-text'>already have an account ? <Link className='form-link' to='/signup'>please login</Link></p>
+            <p className='form-text'>already have an account ? <Link className='form-link' to='/login'>please login</Link></p>
         <SocialLogin></SocialLogin>
         <ToastContainer
         position="top-center"
