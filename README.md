@@ -2,6 +2,26 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# wedding photographer
+site link: [https://wedding-photographer-3d9e5.firebaseapp.com/](https://wedding-photographer-3d9e5.firebaseapp.com/)
+code link: [https://github.com/programming-hero-web-course-4/independent-service-provider-alamgir5253](https://github.com/programming-hero-web-course-4/independent-service-provider-alamgir5253)
+
+feature fo this project
+- there is a home page incuding banner, services, packges, footer
+- there is also login route
+- there is a sign up route
+- htere is a about route
+- there is a authentication route name check out,
+if you click the check out button, it wil take you login page, becouse you cann't access check out page whthout authentication
+
+
+ list of technologies
+- react router
+- firebase hook
+- react toast
+- react bootstrap
+- firebase 
+
 ## Available Scripts
 
 In the project directory, you can run:
